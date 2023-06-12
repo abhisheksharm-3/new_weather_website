@@ -190,7 +190,7 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 1em;
   width: 1em;
-  overflow: hiddern;
+  overflow: hidden;
 }
 
 .container {
@@ -277,7 +277,7 @@ body {
   -o-border-radius: var(--radius-pill);
 }
 
-.span .btn-primary {
+.header .btn-primary .span {
   font-weight: var(--weight-semiBold);
 }
 
