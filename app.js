@@ -392,7 +392,7 @@ export const updateWeather = function (lat, lon) {
                     height="36" class="weather-icon" title="${description}">
 
                 <span class="span">
-                    <p class="title-2">${parseInt(temp_max)}&degC</p>
+                    <p class="title-2">${parseInt(temp_max)}&deg</p>
                 </span>
             </div>
 

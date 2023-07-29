@@ -24,7 +24,7 @@ const searchedLocation = query => updateWeather(...query.split("&"));
 
 const routes = new Map([
 
-    ["/", currentLocation]
+    ["/#", currentLocation],
     ["/current-location", currentLocation],
     ["/weather", searchedLocation]
 ]);
