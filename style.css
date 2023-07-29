@@ -810,6 +810,7 @@ article.container::before {
   justify-content: center;
   align-items: center;
   display: none;
+  text-align: center;
   z-index: 8;
 }
 
