@@ -1,7 +1,7 @@
 'use strict';
 
 import { updateWeather, error404 } from "./app.js"
-const defaultLocation = "#/weather?lat=51.5073219&lon=-0.1276474";
+const defaultLocation = "#/current-location";
 
 const currentLocation = function () {
 
@@ -24,6 +24,7 @@ const searchedLocation = query => updateWeather(...query.split("&"));
 
 const routes = new Map([
 
+    ["/", currentLocation]
     ["/current-location", currentLocation],
     ["/weather", searchedLocation]
 ]);
