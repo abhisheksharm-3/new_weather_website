@@ -122,7 +122,7 @@ export const updateWeather = function (lat, lon) {
         const [{ description, icon }] = weather;
 
         const card = document.createElement("div");
-        card.classList.add("card", "card-lg", "current-weather-card");
+        card.classList.add("card", "card-lg", "current-weather-card", "glow");
 
         card.innerHTML = `
 <h2 class="title-2 card-title">Now</h2>
@@ -170,7 +170,7 @@ export const updateWeather = function (lat, lon) {
             card.innerHTML = `
     <h2 class="title-2" id="highlights-label">Today's Highlights</h2>
                         <div class="highlight-list">
-                            <div class="card card-sm highlight-card one">
+                            <div class="card card-sm highlight-card one neural">
 
                                 <h3 class="title-3">
                                     Air Quality Index
@@ -201,7 +201,7 @@ export const updateWeather = function (lat, lon) {
                                 </span>
                             </div>
 
-                            <div class="card card-sm highlight-card two">
+                            <div class="card card-sm highlight-card two neural">
                                 <h3 class="title-3">
                                     Sunrise & Sunset
                                 </h3>
@@ -225,7 +225,7 @@ export const updateWeather = function (lat, lon) {
                                 </div>
                             </div>
 
-                            <div class="card card-sm highlight-card">
+                            <div class="card card-sm highlight-card neural">
 
                                 <h3 class="title-3">
                                     Humidity
@@ -237,7 +237,7 @@ export const updateWeather = function (lat, lon) {
                                 </div>
 
                             </div>
-                            <div class="card card-sm highlight-card">
+                            <div class="card card-sm highlight-card neural">
 
                                 <h3 class="title-3">
                                     Pressure
@@ -249,7 +249,7 @@ export const updateWeather = function (lat, lon) {
                                 </div>
 
                             </div>
-                            <div class="card card-sm highlight-card">
+                            <div class="card card-sm highlight-card neural">
 
                                 <h3 class="title-3">
                                     Visibility
@@ -261,7 +261,7 @@ export const updateWeather = function (lat, lon) {
                                 </div>
 
                             </div>
-                            <div class="card card-sm highlight-card">
+                            <div class="card card-sm highlight-card neural">
 
                                 <h3 class="title-3">
                                     Feels Like
