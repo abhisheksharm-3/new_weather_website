@@ -373,7 +373,7 @@ export const updateWeather = function (lat, lon) {
                 const {
 
                     main: { temp_max },
-                    weatehr,
+                    weather,
                     dt_txt
 
                 } = forecastList[i];
